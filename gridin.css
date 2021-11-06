@@ -1,0 +1,93 @@
+.header{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.explorebott{
+    display: grid;
+    grid-gap: 10px;
+    margin: 25px;
+    padding-top: 90px;
+    width: 40rem;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.collage{
+    margin: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,minmax(200px,350px));
+    grid-template-rows: repeat(3, minmax(200px,350px));
+    grid-template-areas:"img1  img1  img2  vacio1"
+                        "img1  img1  vacio2  img3"
+                        "img4  img4  img4  img4"
+}
+
+.collage span{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 20px 48px #bebebe;
+}
+.uno{
+    grid-column: img1;
+    grid-row: img1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dos{
+    grid-column: img2;
+    grid-row: img2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tres{
+    grid-column: img3;
+    grid-row: img3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuatro{
+    grid-column: img4;
+    grid-row: img4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacio1{
+    background-color:rgb(211, 84, 0);
+    grid-column: vacio1;
+    grid-row: vacio1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacio2{
+    background-color:rgb(211, 84, 0);
+    grid-column: vacio2;
+    grid-row: vacio2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
